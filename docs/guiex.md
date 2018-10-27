@@ -21,3 +21,27 @@ For `'x'`/`'y'`, 0 represents the left/topmost side of the controls and 1 repres
 For `'w'`/`'h'`, `changing` is resized so it's right/bottom side is moved to the alignment value of `reference`.
 
 If omitted, `alignment := .5`, which will center `changing` with `reference` if using the `'x'` or `'y'` options.
+### `backmove gui[, winTitle, winText, excludeTitle, excludeText]`
+Makes the non-interactable client aera of `gui` able to move the window via click and drag.
+#### gui
+Type: Gui Object
+### `hkGroup gui, text, names[, limits, positioning, hkBoxWidth, xPadding, yPadding]`
+Adds a group of hotkey controls, with text to the left explaining what they're for, to `gui`.
+#### gui
+Type: Gui Control Object
+#### text
+An array of the strings that will be displayed next to the hotkey controls.
+#### names
+An array of strings that will be the names associated with the hotkey controls.
+#### limits
+Either a single value or an array of values. Reperesents the limits for each hotkey control.
+#### positioning
+Type: String
+
+A standard positioning string.
+#### hkBoxWidth
+The width of the hotkey controls.
+#### xPadding
+The distance between the text and the hotkey controls.
+#### yPadding
+The distance between each hotkey control.
