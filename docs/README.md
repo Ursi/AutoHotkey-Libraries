@@ -1,6 +1,6 @@
 # Libraries
 - [Array](arr.md)
-- Gui Extended
+- [Gui Extended](guiex.md)
 - Hotkey Extended
 - HTTP
 - ini Extended
