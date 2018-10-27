@@ -1,5 +1,5 @@
 # Libraries
-- Array
+- [Array](arr.md)
 - Gui Extended
 - Hotkey Extended
 - HTTP
