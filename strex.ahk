@@ -1,4 +1,10 @@
 class strex{
+	concat(sep, str, more*){
+		s := str
+		for k, v in more
+			s .= sep v
+		return s
+		}
 	rep(str, times){
 		loop times
 			newStr .= str
