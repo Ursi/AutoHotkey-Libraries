@@ -1,7 +1,7 @@
 # Libraries
 - [Array](arr.md)
 - [Gui Extended](guiex.md)
-- Hotkey Extended
+- [Hotkey Extended](hkex.md)
 - HTTP
 - ini Extended
 - Mouse and Keyboard Extended
