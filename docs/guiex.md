@@ -45,3 +45,17 @@ The width of the hotkey controls.
 The distance between the text and the hotkey controls.
 #### yPadding
 The distance between each hotkey control.
+### `setCursor guiOrCont, cursor[, options]`
+#### guiOrCont
+A GUI or GUI control object for which the cursor will change. If `guiOrCont` is a GUI object, then the cursor will only change when it's in the client area **and** not over a control.
+#### cursor
+This is a string that represents one of the built-in Windows cursors. You can read more about them [here](https://docs.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-loadcursorw). Use the part directly after `IDC_`. It also includes `hide`, which will hide the cursor.
+#### options
+Type: `String`
+`n`: `cursor` will be applied when the mouse is moved, even when mouse buttons are held down, provided that no other setting overrides this.
+`l`, `r`, and `m`: These options all have the following sub-options:
+- `g`: `cursor` will be applied when the mouse is moved and the specified button is being held down.
+- `d`: `cursor` will be applied when the specified button is clicked down.
+- `u`: `cursor` will be applied when the specified button is released.
+- `2`: `cursor` will be applied when the specified button is double clicked and held down.
+Omitting all sub-options is equivalent to the sub-options `du2`, and omitting `options` is equivalent to `n l r m` (which changes the cursor at all times). Put spaces between the different options, but not between options and theirs sub-options, e.g. `ldg ru m2`.
