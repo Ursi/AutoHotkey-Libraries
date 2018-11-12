@@ -11,5 +11,7 @@ returns a sub array created from `array`.
 The index of `array` whose value will be the first element of the returned array. If this value is negative, it counts from the end of `array`.
 #### end
 The index of `array` whose value will be the last element of the returned array. If this value is negative, it counts from the end of `array`. Omitting this value is the same as `arr.sort(array, 1, start)`
-### `union(array1[, more*])`
-Returns the union of all the arrays given to it, preserving the order in which they're passed.
+### `sum(array)`
+Returns the sum of all the array's elements.
+### `union(arrays*)`
+Returns the array `[a1[1], a1[2], ..., a1[n1], a2[1], ..., a2[n2], am[1], ..., am[nm]]`
