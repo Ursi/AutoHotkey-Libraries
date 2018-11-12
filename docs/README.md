@@ -2,7 +2,7 @@
 - [Array](arr.md)
 - [Gui Extended](guiex.md)
 - [Hotkey Extended](hkex.md)
-- HTTP
+- [HTTP](http.md)
 - ini Extended
 - Mouse and Keyboard Extended
 - String Extended
