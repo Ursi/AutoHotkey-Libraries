@@ -10,7 +10,7 @@ returns a sub array created from `array`.
 #### start
 The index of `array` whose value will be the first element of the returned array. If this value is negative, it counts from the end of `array`.
 #### end
-The index of `array` whose value will be the last element of the returned array. If this value is negative, it counts from the end of `array`. Omitting this value is the same as `arr.sort(array, 1, start)`
+The index of `array` whose value will be the last element of the returned array. If this value is negative, it counts from the end of `array`. Omitting this value is the same as `arr.sort(array, start, -1)`
 ### `sum(array)`
 Returns the sum of all the array's elements.
 ### `union(arrays*)`
