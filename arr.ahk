@@ -10,6 +10,17 @@ class arr{
 		else
 			return 0
 		}
+	random(array){
+		array := array.clone()
+		len := array.length()
+		newArray := {}
+		while len > 0{
+			spot := random(1, len--)
+			newArray.push array[spot]
+			array.removeAt spot
+			}
+		return newArray
+		}
 	sort(array, sortFuncs*){
 		if sortFuncs.length() < 2{
 			if sortFuncs.length() = 0
@@ -23,7 +34,7 @@ class arr{
 				return array
 			split(array){
 				splitVal := floor(array.length() / 2)
-				return [arr.sub(array, splitVal), arr.sub(array, splitVal + 1, -1)]
+				return [arr.sub(array, 1, splitVal), arr.sub(array, splitVal + 1)]
 				}
 			merge(arr1, arr2){
 				newArr := []
@@ -72,19 +83,21 @@ class arr{
 			return newArr
 			}
 		}
-	sub(arr, start, end := ''){
+	sub(arr, start, end := -1){
 		newArr := []
 		if start < 0
 			start := arr.length() + 1 + start
-		if start and end{
-			if end < 0
-				end := arr.length() + 1 + end
-			loop end - start + 1
-				newArr.push(arr[a_index + start - 1])
-		}else
-			loop start
-				newArr.push(arr[a_index])
+		if end < 0
+			end := arr.length() + 1 + end
+		loop end - start + 1
+			newArr.push(arr[a_index + start - 1])
 		return newArr
+		}
+	sum(array){
+		sum := 0
+		for k, v in array
+			sum += v
+		return sum
 		}
 	union(array1, arrays*){
 		if arrays.length() = 0
