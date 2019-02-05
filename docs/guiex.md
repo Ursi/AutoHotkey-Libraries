@@ -1,7 +1,7 @@
 ## Class
 ### `guiex`
 ## Methods
-### `align changing, reference, xywh[, alignment]`
+### `align(changing, reference, xywh[, alignment])`
 Aligns `changing` with `reference`.
 #### changing
 Type: Gui Control Object
@@ -21,11 +21,11 @@ For `'x'`/`'y'`, 0 represents the left/topmost side of the controls and 1 repres
 For `'w'`/`'h'`, `changing` is resized so it's right/bottom side is moved to the alignment value of `reference`.
 
 If omitted, `alignment := .5`, which will center `changing` with `reference` if using the `'x'` or `'y'` options.
-### `backmove gui[, winTitle, winText, excludeTitle, excludeText]`
+### `backmove(gui[, winTitle, winText, excludeTitle, excludeText])`
 Makes the non-interactable client aera of `gui` able to move the window via click and drag.
 #### gui
 Type: Gui Object
-### `hkGroup gui, text, names[, limits, positioning, hkBoxWidth, xPadding, yPadding]`
+### `hkGroup(gui, text, names[, limits, positioning, hkBoxWidth, xPadding, yPadding])`
 Adds a group of hotkey controls, with text to the left explaining what they're for, to `gui`.
 #### gui
 Type: Gui Control Object
@@ -45,7 +45,7 @@ The width of the hotkey controls.
 The distance between the text and the hotkey controls.
 #### yPadding
 The distance between each hotkey control.
-### `setCursor guiOrCont, cursor[, options]`
+### `setCursor(guiOrCont, cursor[, options])`
 #### guiOrCont
 A GUI or GUI control object for which the cursor will change. If `guiOrCont` is a GUI object, then the cursor will only change when it's in the client area **and** not over a control.
 #### cursor
